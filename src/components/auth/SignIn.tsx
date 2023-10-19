@@ -11,8 +11,8 @@ import { useAuth } from "@/providers/AuthProvider";
 export function SignIn() {
   const inlets = useSafeAreaInsets();
   const [signUp, setSignUp] = useState(false);
-  const [email, setEmail] = useState("benedikt+test@feld.app");
-  const [password, setPassword] = useState("testtest");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { signIn } = useAuth();
 
   async function handleSignUp() {
