@@ -2,7 +2,7 @@
 
 This is a demo app built to showcase how to use PowerSync to built an offline-first React Native app. The app is built with Expo/React Native, and uses Supabase as the backend. The following video gives an overview of the implemented functionality:
 
-[VIDEO]
+https://github.com/journeyapps/powersync-supabase-react-native-group-chat-demo/assets/91166910/f93c484a-437a-44b3-95ab-f5864a99ca1f
 
 Here are some steps to keep in mind when building/deploying your own version of this app:
 
