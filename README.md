@@ -11,3 +11,5 @@ Here are some steps to keep in mind when building/deploying your own version of 
 2. Create a PowerSync instance using the [PowerSync dashboard](https://powersync.journeyapps.com/) and connect the instance to your Supabase backend. Copy the Sync Rules from the [sync-rules.yml](./sync-rules.yml) of this repository into the sync-rules.yaml within the PowerSync dashboard. Copy the PowerSync instance URL from the dashboard and replace it in the [.env](./.env) file.
 
 3. Create an Expo project and replace the EAS project id in the [.env](./.env) file.
+
+> Please note: If you leave the values within the [.env](./.env) file as they are (non of them are sensitive secret's btw), you can try the app with the demo backend without spinning up your own Supabase backend and PowerSync instance.
