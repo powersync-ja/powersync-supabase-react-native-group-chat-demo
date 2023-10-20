@@ -12,4 +12,4 @@ Here are some steps to keep in mind when building/deploying your own version of 
 
 3. Create an Expo project and replace the EAS project id in the [.env](./.env) file.
 
-> Please note: If you leave the values within the [.env](./.env) file as they are (non of them are sensitive secret's btw), you can try the app with the demo backend without spinning up your own Supabase backend and PowerSync instance.
+> Please note: If you leave the values within the [.env](./.env) file as they are (none of them are sensitive secret's btw), you can try the app with the demo backend without spinning up your own Supabase backend and PowerSync instance (as long at the demo backend is around, at least).
