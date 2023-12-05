@@ -1,4 +1,9 @@
-import { Contact, MessageSquare, Settings } from "@tamagui/lucide-icons";
+import {
+  Contact,
+  MessageSquare,
+  Settings,
+  Wrench,
+} from "@tamagui/lucide-icons";
 import { Redirect, Tabs } from "expo-router";
 
 import { useAuth } from "@/providers/AuthProvider";
@@ -36,6 +41,13 @@ export default function AppLayout() {
             title: "Settings",
             headerShown: false,
             tabBarIcon: ({ color }) => <Settings color={color} />,
+          }}
+        />
+        <Tabs.Screen
+          name="tinybase"
+          options={{
+            title: "TinyBase",
+            tabBarIcon: ({ color }) => <Wrench color={color} />,
           }}
         />
       </Tabs>

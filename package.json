@@ -57,6 +57,7 @@
     "react-native-web": "0.19.9",
     "tamagui": "1.79.6",
     "text-encoding": "^0.7.0",
+    "tinybase": "link:tinybase",
     "web-streams-polyfill": "^3.2.1"
   },
   "devDependencies": {
