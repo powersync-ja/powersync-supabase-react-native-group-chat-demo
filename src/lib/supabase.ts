@@ -1,23 +1,24 @@
 import "react-native-url-polyfill/auto";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { MMKV } from "react-native-mmkv";
 import { createClient } from "@supabase/supabase-js";
 
 import { config } from "./config";
 import { Database } from "./database.types";
 
+export const storage = new MMKV();
+
 const authStorage = {
-  setItem: async (key: string, value: string) =>
-    await AsyncStorage.setItem(key, value),
-  getItem: async (key: string) => await AsyncStorage.getItem(key),
-  removeItem: async (key: string) => await AsyncStorage.removeItem(key),
+	setItem: (key: string, value: string) => storage.set(key, value),
+	getItem: (key: string) => storage.getString(key) ?? null,
+	removeItem: (key: string) => storage.delete(key),
 };
 
 export const supabase = createClient<Database>(
-  config.supabaseUrl,
-  config.supabaseAnonKey,
-  {
-    auth: {
-      storage: authStorage,
-    },
-  },
+	config.supabaseUrl,
+	config.supabaseAnonKey,
+	{
+		auth: {
+			storage: authStorage,
+		},
+	},
 );
