@@ -27,9 +27,6 @@ const config: ExpoConfig = {
     },
     jsEngine: "jsc",
   },
-  experiments: {
-    tsconfigPaths: true,
-  },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
